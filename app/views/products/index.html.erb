@@ -11,6 +11,9 @@
 
   <tbody>
     <% @products.each do |product| %>
+      <tr>
+        <%= image_tag url_for(product.image) %>
+      </tr>
     <% end %>
   </tbody>
 </table>
